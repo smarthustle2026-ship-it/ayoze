@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="center">
+
+<audio id="bgMusic" loop>
+  <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function playMusic() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+    document.removeEventListener("click", playMusic);
+  }
+
+  document.addEventListener("click", playMusic);
+</script>
+<div class="box">
+<button class="nav-btn">PLEASE DOUBLE CLICK THE SCREEN</button>
+  <h1>For You  My Love❤️</h1>
+  <p>I didn’t get the chance to give you something big or flashy this year, but I couldn’t let your birthday pass like it is just any normal day.
+
+So I sat down and built this for you, something simple, but real.
+
+Every word here is from me. Every page is a piece of how I feel about you.
+
+You are not just someone I talk to or spend time with, you are someone who brings a kind of peace into my life that I didn’t even know I needed.
+
+The way you carry yourself, the way you stay soft even in tough moments, the way you just exist, it means more to me than I probably say out loud.
+
+This is not about anything material. It is about effort. It is about choosing you in a way I can, with what I have.
+
+So whenever you need me, just come here.
+
+There is something waiting for you ❤️❤️</p>
+
+  <a href="message.html">
+    <button>Click to Enter</button>
+  </a>
+</div>
+
+<div class="hearts"></div>
+
+</body>
+</html>

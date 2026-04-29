@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Message ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.body.addEventListener('click', function () {
+    document.getElementById("bgMusic").play();
+  });
+</script>
+<button class="nav-btn">PLEASE DOUBLE CLICK THE SCREEN</button>
+<div class="box fade">
+  <h1> Hey Love ❤️</h1>
+
+  <p id="typingText"></p>
+
+  <a href="gallery.html">
+    <button>See Our Memories 📸</button>
+  </a>
+</div>
+
+<div class="hearts"></div>
+
+<script>
+  const text = `
+
+NOW LET ME START BY SAYING.........
+
+🎉 Happy Birthday My Love ❤️  
+
+Today is all about you, and I just want you to take a moment to truly enjoy it without overthinking anything.  
+
+You deserve a day filled with calm, happiness, and genuine smiles, because the kind of person you are naturally brings that same energy into other people’s lives.  
+
+I don’t always say it, but you have become someone really important to me in a way that feels easy and real.  
+
+Being around you, even in the simplest moments, has a way of making everything feel lighter and more peaceful.  
+
+It’s something rare, and I don’t take that for granted.  
+
+On your special day, I hope you feel appreciated, valued, and seen for who you truly are.  
+
+Not just today, but every day.  
+
+You carry yourself with a kind of softness and strength that stands out without you even trying, and that’s something I genuinely admire about you.  
+
+I hope this new year of your life brings you more happiness, more growth, and more moments that make you smile without effort.  
+
+And no matter what happens, I want you to always remember that you have someone who cares about you and wishes you nothing but the best.  
+
+So take your time today, smile a little more, and just be yourself, because that alone is already enough.  
+
+Happy birthday once again ❤️🎂  
+
+No matter what happens, I will always choose you.`;
+
+  let i = 0;
+
+  function typeWriter() {
+    if (i < text.length) {
+      document.getElementById("typingText").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(typeWriter, 30);
+    }
+  }
+
+  typeWriter();
+</script>
+<a href="index.html">
+  <button class="nav-btn">Back</button>
+</a>
+
+</body>
+</html>
